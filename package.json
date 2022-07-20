@@ -1,0 +1,45 @@
+{
+    "name": "node-datathistle",
+    "version": "1.0.0",
+    "description": "Datathistle - NodeJS Client",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "standard --fix && standard && cd test && mocha --exit --check-leaks --slow 500ms --timeout 10000",
+        "postinstall": "node tasks/postinstall.js || exit 0"
+    },
+    "author": "Lawrence Cherone (https://cherone.co.uk)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lcherone/node-datathistle.git"
+    },
+    "homepage": "https://github.com/lcherone/node-datathistle#readme",
+    "bugs": {
+        "url": "https://github.com/lcherone/node-datathistle/issues"
+    },
+    "keywords": [
+        "library",
+        "utility",
+        "helper",
+        "api",
+        "client",
+        "datathistle",
+        "theatre",
+        "events"
+    ],
+    "standard": {
+        "env": [
+            "mocha"
+        ]
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "^10.0.0",
+        "should": "^13.2.3",
+        "standard": "^17.0.0"
+    },
+    "funding": {
+        "type": "paypal",
+        "url": "https://paypal.me/lcherone"
+    }
+}
